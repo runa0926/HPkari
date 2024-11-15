@@ -1,0 +1,251 @@
+@charset "utf-8";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto; 
+  max-width: 960px;
+  padding: 0.4%;
+  width: calc(100% - 64px);
+}
+
+.smairu {
+  margin: 0;
+  line-height: 1px;
+}
+
+.smairu img {
+  vertical-align: bottom;
+}
+
+.smairu a {
+  display: block;
+}
+
+nav {
+  display: block;
+  
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+
+
+a {
+  text-decoration: none;
+}
+
+header h1 {
+  width: 30%;
+}
+
+header nav {
+  width: 70%;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  padding: 10px 0;
+}
+
+header li{
+  width: 100%;
+  line-height: 2.5; 
+  font-size: 0.9rem;
+  margin-left: 30px;
+  padding: 25px;
+}
+
+
+header a {
+  color: black;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#mainvisual {
+  margin-bottom: 80px;
+}
+
+#mainvisual img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.ume {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  width: 100%;
+  background: pink;
+  box-sizing: border-box;
+}
+
+.ume li {
+  width: calc((100% - 80px) / 3);
+}
+.ume img {
+  width: 100%;
+}
+
+.w-1 {
+  max-width: 960px;
+  font-size: 0.9rem;
+}
+
+.riri {
+  font-size: 24px;
+  text-align: center;
+  padding-top: 64px;
+}
+.sora {
+  font-size: 16px;
+  vertical-align: bottom;
+  list-style: none;
+}
+
+.products li {
+  width: calc((100% - 3px) / 3);
+  box-sizing: border-box;
+}
+
+.products img {
+  width: 100%;
+  height: auto;
+}
+
+#news dl {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: solid 1px black;
+  margin-bottom: 20px;
+}
+
+#news dt {
+  width: 20%;
+  border-bottom: solid 1px black;
+  padding: 15px;
+}
+
+#news dd {
+  width: 80%;
+  border-bottom: solid 1px black;
+  padding: 15px;
+}
+
+#contast dl {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+#contast dt {
+  width: 15%;
+}
+
+#contast dd {
+  width: 85%;
+  margin-bottom: 10px;
+}
+
+#contast dd input {
+  width: 100%;
+  border: solid 1px gainsboro;
+  padding: 10px;
+}
+
+button {
+  all: unset;
+  width: 200px;
+  background: black;
+  color: white;
+  padding: 15px 0;
+  border: solid 1px black;
+  text-align: center;
+  line-height: 32px;
+  margin: 30px auto;
+  display: block;
+}
+ 
+
+footer {
+  background: black;
+  padding: 10px 20px;
+  text-align: center;
+  color: white;
+  font-size: 0.5rem
+}
+
+@media screen and (max-width:600px) {
+  #header {
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  .smairu {
+    margin: 0 auto;
+  }
+
+  hader ul {
+    display: none;
+    font-size: 0.8rem;
+  }
+  # {
+    display: block;
+    width: 100px;
+  }
+  #mainvisual img {
+    height: 300px;
+  }
+  .ume {
+    width: 100%;
+    flex-direction: column;
+  }
+  .ume li {
+    width: 100%;
+  }
+  #news dt {
+    width: 100%;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  #news dd {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  #contast dl {
+    flex-direction: column;
+  }
+
+  #contast dt {
+    width: 100%;
+  }
+
+  #contast dd {
+    width: 100%;
+  }
+
+  
+
+  #contact dd input, #contact dd textarea {
+    width: 100%;
+    border: solid 1px #c8c8c8;
+    padding: 10px;
+  }
+}
